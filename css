@@ -1,0 +1,286 @@
+body{
+	background-color: #F1F1F1;
+}
+
+header{
+	background-color: #675C53;
+	height: 3.5em;
+}
+
+body > header > a > img:only-child{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
+	height: 2em;
+	margin-left: 5em;
+}
+
+h1{	padding-top: 1em;
+	padding-left: 1em;
+	color: black;
+	font-family: Roboto condensed;
+	font-size: 2em;
+} 
+
+h2{
+	margin-left: 12em;
+	font-family: Roboto condensed;
+	font-size: 2em;
+}
+
+h3{	margin-left: 1em;
+	font-family: Roboto;
+	font-size: 1em;
+}
+
+h4{
+	margin-left: 1.3em;
+	font-family: roboto condensed;
+	font-size: 1.2em;
+}
+
+section{
+	max-width: 100%;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	background-color: hsl(51.7, 100%, 49.4%);
+}
+
+form{
+	margin-left: 2em;
+}
+
+input{
+	margin-right: 0.5em;
+}
+
+input:hover{
+	cursor: pointer;
+	box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #6495ED;
+}
+
+label{
+	padding-bottom: 0.3em;
+	padding-left: 2em;
+	display: flex;
+	font-family: Roboto, sans-serif;
+
+}
+
+label:active{
+	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #6495ED;
+}
+
+button{
+	border-style: none;
+	border-radius: 0.5em;
+	height: 2em;
+	width: 8em;
+	margin-left: 17em;
+	background-color: #B74A00;
+	color: white;
+	font-family: Roboto condensed;
+	font-size: 1.2em;
+	opacity: 0.7;
+	transition: 0.3s;
+}
+
+button:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+article{
+	font-family: roboto condensed;
+	width: 35em;
+	border-radius: 0.6em;
+	background-color: white;
+	padding-bottom: 1em;
+	margin: auto;
+	margin-bottom: 2em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+article img:only-child{
+	display: block;
+	width: 35em;
+	transition: 0.3s;
+}
+
+article img:only-child:hover{
+	opacity: 0.5;
+}
+
+body > main > article > section{
+	background-color: white;
+}
+body > main > article > section > a > img:only-child{
+	margin-left: 31em;
+	height: 2em;
+	width: 2em;
+}
+body > main > article > section > a > img:only-child:hover{
+	cursor: pointer;
+}
+
+figcaption{
+	font-size: 0.9em;
+	font-family: Roboto, sans-serif;
+	padding-left: 2em;
+	padding-bottom: 1em;
+	max-width: 35em;
+}
+
+a{
+	color: #6495ED;
+}
+
+p{
+	padding-left: 2em;
+	font-size: 0.9em;
+	font-family: roboto;
+	color: grey;
+}
+
+p, a{
+	padding-left: 2em;
+	margin-bottom: 1em;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+footer{
+	background-color: white;
+}
+
+footer section:only-child{
+	padding-top: 3em;
+	padding-left: 71em;
+	height: 3em;
+	background-color: white;
+}
+
+footer img:only-child{
+	height: 1.6em;
+	width: 1.6em;
+}
+
+
+@media screen and (max-width:80em){
+	body{
+		max-width: 100%;
+	}
+	footer{
+	width: 100%;
+	max-width: 80em;
+	}
+	footer section:only-child{
+		width: 100%;
+		padding-left: 0em;
+	}
+	h2{
+		margin-left: 10em;
+	}
+}
+
+
+
+@media screen and (max-width:40em){
+	body{
+		max-width: 100%;
+	}
+	header{
+		height: 20%;
+	}
+	header > a > img{
+		max-width: 0.5em:
+		max-height: 0.5em;
+	}
+	section{
+		width: 100%;
+	}
+	article{
+		width: 100%;
+	}
+	article > a > img{
+		max-width: 100%;
+	}
+
+	label, figcaption{
+	margin-left: 0;
+	font-size: 80%;
+	}
+
+	body > main > article > section > a > img:only-child{
+		margin-left: 2em;
+	}
+	form{
+		max-width: 100%;
+	}
+	h2{
+		width: 80%;
+		max-width: 30em;
+		margin-left: 2em;
+	}
+	button{
+		margin-top: 1em;
+		margin-left: 2em;
+		width: 50%;
+	}
+	footer{
+		width: 100%;
+		max-width: 40em;
+	}
+	footer section:only-child{
+		width: 100%;
+		padding-left: 0em;
+	}
+}
+}
+
+@media screen and (max-width:20em){
+	body{
+		max-width: 100%;
+	}
+	header{
+		height: 20%;
+	}
+	header > a > img{
+		max-width: 1em:
+		max-height: 1em;
+	}
+	section{
+		width: 100%;
+	}
+	article{
+		width: 100%;
+	}
+	article > a > img{
+		max-width: 100%;
+	}
+	body > main > article > section > a > img:only-child{
+		margin-left: 2em;
+	}
+	form{
+		max-width: 100%;
+	}
+	h2{
+		width: 50%;
+		max-width: 10em;
+		margin-left: 0.5em;
+	}
+	button{
+		margin-top: 1em;
+		margin-left: 2em;
+		width: 50%;
+	}
+	footer{
+		width: 100%;
+		max-width: 20em;
+	}
+	footer section:only-child{
+		width: 100%;
+		padding-left: 0em;
+	}
+}
