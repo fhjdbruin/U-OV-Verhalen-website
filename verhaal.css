@@ -1,0 +1,425 @@
+/**************************************** Achtergrond ****************************************/
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body,html{
+	min-height: 100%;
+}
+
+body{
+	width: 100%;
+	height: 100%; 
+	margin: auto;
+	background-image:url(../img/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+main{
+	max-width: 100%;
+}
+/******************************************* Header *******************************************/
+header{
+	width: 100%;
+	background-color: #675C53;
+	height: 3.5em;
+}
+
+body > header > a{
+	padding-left: 2em;
+}
+
+body > header > a > img:only-child{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
+	height: 2em;
+	margin-left: 5em;
+}
+
+/******************************************* Verhaal *******************************************/
+body > main > div{
+	text-align: center;
+	margin-top: 2em;
+	max-width: 100%;
+}
+
+body > main > div > a{
+	display: inline-flex;
+	width: 10em;
+	height: 5em;
+}
+
+body > main > div > a > img{
+	display: inline-flex;
+	width: 10em;
+	height: 10em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 0em;
+	margin-bottom: 2.5em;
+}
+
+body > main > div > a:hover{
+	cursor: pointer;
+}
+
+body > main > div > p{
+	display: inline-block;
+	max-width: 30em;
+	max-height: 5em;
+	margin-left: 1em;
+	margin-top: 1.5em;
+	margin-right: 1em;
+	margin-bottom: 2.5em;
+	color: transparent;
+	text-align: left;
+   	text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  	transition: 0.5s;
+}
+
+#bold{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#big{
+	font-size: 1.4em;
+}
+
+#italic{
+	font-style: italic;
+}
+
+#small{
+	font-size: 0.8em;
+}
+
+#p1.active {
+	color: black;
+	text-shadow: none;
+}
+
+#p2.active {
+	color: black;
+	text-shadow: none;
+}
+
+#p3.active {
+	color: black;
+	text-shadow: none;
+}
+
+#p4.active {
+	color: black;
+	text-shadow: none;
+}
+
+#p5.active {
+	color: black;
+	text-shadow: none;
+}
+
+#p6.active {
+	color: black;
+	text-shadow: none;
+}
+
+#p7.active {
+	color: black;
+	text-shadow: none;
+}
+
+#p8.active {
+	color: black;
+	text-shadow: none;
+}
+
+#p9.active {
+	color: black;
+	text-shadow: none;
+}
+
+#p10.active {
+	color: black;
+	text-shadow: none;
+}
+
+/***************************************** Like button *****************************************/
+#like{
+	right: 0; 
+    top: 0;
+    position: fixed;
+	background-color: white;
+	border-radius: 0.6em;
+	width: 2em;
+	height: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-top: 5em;
+	margin-right: 2em;
+	opacity: 0.5;
+  	transition-duration: 0.4s;
+  	overflow: hidden;
+  	cursor: pointer;
+}
+
+#like:after{
+  content: '';
+  background: #ff0000;
+  display: block;
+  position: relative;
+  padding-top: 500%;
+  padding-left: 100%;
+  padding-bottom: 200%;
+  margin-left: -10em;
+  margin-top: 0em;
+  margin-right: -10em;
+  margin-bottom: 30em;
+  opacity: 0;
+  transition: all 3s;
+}
+
+#like:active:after{
+  padding: 0;
+  margin: 0;
+  opacity: 0.5;
+  transition: 0s;
+}
+
+#like:hover{
+	opacity: 1;
+}
+
+#down{
+	right: 0; 
+    top: 0;
+    position: fixed;
+	background-color: white;
+	border-radius: 0.6em;
+	width: 2em;
+	height: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-top: 12em;
+	margin-right: 2em;
+	opacity: 0.5;
+  	transition-duration: 0.4s;
+  	overflow: hidden;
+  	cursor: pointer;
+}
+
+#down:after{
+  content: '';
+  background: #32CD32;
+  display: block;
+  position: relative;
+  padding-top: 500%;
+  padding-left: 100%;
+  padding-bottom: 200%;
+  margin-left: -10em;
+  margin-top: 0em;
+  margin-right: -10em;
+  margin-bottom: 30em;
+  opacity: 0;
+  transition: all 3s;
+}
+
+#down:active:after{
+  padding: 0;
+  margin: 0;
+  opacity: 0.5;
+  transition: 0s;
+}
+
+#down:hover{
+	opacity: 1;
+}
+
+body > main > a > img:only-child{
+	opacity: 0.5;
+	height: 2em;
+	width: 2em;
+}
+
+body > main >  a > img:only-child:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+#p11{
+	display: none;
+}
+
+#p11.active{
+	right: 0; 
+    top: 0;
+    display: inline-flex;
+    float: right;
+    position: fixed;
+    margin-top: 13em;
+    margin-right: 1em;
+	color: white;
+	font-family: roboto, sans-serif;
+	font-size: 0.7em;
+}
+
+#p12{
+	display: none;
+}
+
+#p12.active{
+	right: 0; 
+    top: 0;
+    display: inline-flex;
+    float: right;
+    position: fixed;
+    margin-top: 23em;
+    margin-right: 1em;
+	color: white;
+	font-family: roboto, sans-serif;
+	font-size: 0.7em;
+}
+
+
+
+/***************************************** Terugknop *****************************************/
+body > main > small{
+	margin-left: 2em;
+	margin-top: 1em;
+	width: 10em;
+	height: 2em;
+	display: none;
+}
+
+body > main > small > a > img{
+	padding-left: 0em;
+	padding-right: 0em;
+	height: 0.9em;
+	width: 0.9em;
+	}
+
+body > main > small > a{
+	font-family: roboto ;
+	font-size: 1em;
+	color: black;
+	text-decoration: underline;
+}
+
+/****************************************** Footer ******************************************/
+footer{
+	margin-top: 3em;
+	background-color: white;
+}
+
+footer div{
+	display: inline-block;
+	margin-top: 2em;
+	padding-top: 1em;
+	padding-left: 67em;
+	height: 5em;
+	background-color: white;
+}
+
+footer div a{
+	display: inline;
+	height: 2em;
+	width: 2em;
+	padding-left: 2em;
+	margin-bottom: 1em;
+}
+
+body > footer > div > a > img{
+	height: 1.7em;
+	width: 1.7em;
+}
+
+/**************************************** Responsive ****************************************/
+@media screen and (max-width:70em){
+	body > main > small{
+		display: inline-block;
+	}
+	body > main > div > a > img{
+		margin-left: 0em;
+		padding-bottom: 1em;
+	}
+	footer{
+		width: 100%;
+		max-width: 70em;
+	}
+	footer div:only-child{
+		width: 20%;
+		padding-left: 0em;
+	}
+}
+
+@media screen and (max-width:40em){
+	body{
+	background-image:url(../img/background2.png);
+	}
+	header{
+		height: 20%;
+	}
+	body > header > a{
+	padding-left: 0em;
+	}
+	body > header > a > img:only-child{
+		height: 1.5em;
+	}
+	body > main > small{
+		display: inline-block;
+	}
+	#like{
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		padding-left: 0.5em;
+		padding-right: 0em;
+		height: 1.5em;
+		height: 1.5em;
+	}
+
+	#down{
+		margin-top: 10em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		padding-left: 0.5em;
+		padding-right: 0em;
+		height: 1.5em;
+		height: 1.5em;
+	}
+
+	#p11.active{
+    margin-top: 11em;
+	}
+
+	#p12.active{
+    margin-top: 18em;
+	}
+
+
+	body > main > a > img:only-child{
+		height: 1.5em;
+		width: 1.5em;
+	}
+	footer{
+		width: 100%;
+		max-width: 40em;
+	}
+	footer div:only-child{
+		width: 50%;
+		padding-left: 0em;
+	}
+}

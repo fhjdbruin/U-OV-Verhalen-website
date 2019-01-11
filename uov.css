@@ -1,0 +1,734 @@
+/**************************************** Achtergrond ****************************************/
+body{
+	background-color: #F1F1F1;
+	margin: auto;
+}
+
+/******************************************* Header *******************************************/
+header{
+	width: 100%;
+	background-color: #675C53;
+	height: 3.5em;
+}
+
+body > header > a > img:only-child{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
+	height: 2em;
+	margin-left: 5em;
+}
+
+/*************************************** H1, H2, H3, H4 ***************************************/
+body > main > h1{
+	margin-top: 0em;
+	font-size: 3em;
+	margin-left: 8em;
+}
+
+h1{	padding-top: 1em;
+	padding-left: 1em;
+	color: black;
+	font-family: Roboto condensed;
+	font-size: 2em;
+} 
+
+h2{	margin-left: 6em;
+	font-family: Roboto condensed;
+	font-size: 2em;
+}
+
+h3{
+	height: 2em;
+	padding-left: 1.5em;
+	font-family: roboto condensed;
+	font-size: 1.2em;
+}
+
+/****************************** Zoekpagina banner en filtersysteem *****************************/
+picture > img{
+	display: block;
+	width: 100%;
+}
+
+section{
+	max-width: 100%;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	background-color: hsl(51.7, 100%, 49.4%);
+}
+
+body > main > section > article{
+	font-family: roboto condensed;
+	width: 40em;
+	border-radius: 0.6em;
+	background-color: white;
+	padding-bottom: 1em;
+	margin: auto;
+	margin-bottom: 2em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+fieldset{
+	border: 0;
+	margin-left: 1em;
+	font-family: Roboto;
+	font-size: 1em;	
+}
+
+body > main > section > article > form{
+	transition: opacity 1s ease-out;
+    opacity: 0; 
+    height: 0;
+    overflow: hidden;
+	margin-left: 9em;
+}
+
+body > main > section > article > form.push {
+	opacity: 1;
+    height: auto;
+}
+
+body > main > form{
+	overflow: visible;
+	margin-left: 20em;
+}
+
+body > main > form > div > input{
+	visibility: visible;
+	display: inline-block;
+}
+
+article > form > label > input{
+	margin-right: 0.5em;
+}
+
+article > form > label > input:hover{
+	cursor: pointer;
+	box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #6495ED;
+}
+
+label{
+	padding-bottom: 0.3em;
+	padding-left: 2em;
+	display: flex;
+	font-family: Roboto, sans-serif;
+}
+
+label:active{
+	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #6495ED;
+}
+
+#before{
+	border-style: none;
+	border-radius: 0.5em;
+	height: 2em;
+	width: 8em;
+	margin-left: 17em;
+	background-color: #E7772B;
+	color: white;
+	font-family: Roboto condensed;
+	font-size: 1.2em;
+	transition: 0.3s;
+}
+
+#before.before{
+	display: none;
+}
+
+#after{
+	display: none;
+}
+
+#after.after{
+	display: inline-block;
+	border-style: none;
+	border-radius: 0.5em;
+	height: 2em;
+	width: 8em;
+	margin-left: 12em;
+	background-color: #E7772B;
+	color: white;
+	font-family: Roboto condensed;
+	font-size: 1.2em;
+	transition: 0.3s;
+	
+}
+
+#before:hover{
+	background-color: #C05E00;
+	cursor: pointer;
+}
+
+#after:hover{
+	background-color: #C05E00;
+	cursor: pointer;
+}
+
+/************************************* Account aanmaken *************************************/
+body > main > section > h1{
+	margin-left: 2.5em;
+	font-size: 2.5em;
+	font-family: roboto, sans-serif;
+}
+
+body > main > section > div > article{
+	font-family: roboto condensed;
+	height: 22em;
+	width: 25em;
+	border-radius: 0.6em;
+	background-color: white;
+	padding-bottom: 1em;
+	margin-left: 3em;
+	margin-bottom: 2em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body > main > section > div > article > form{
+	display: block;
+}
+
+body > main > section > div > article > form > input{
+	width: 17em;
+	margin-left: 2em;
+	font-family: roboto;
+	font-size: 1em;
+	border-width: 1px;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom-style: outset;
+	display: inline-block;
+	margin-top: 2em;
+}
+body > main > section > div > article > form > input:nth-child(3){
+	margin-bottom: 2em;
+}
+
+body > main > section > div > article > form > input:focus{
+	border-color: rgb(225, 103, 0);
+}
+
+body > main > section > div > article > h2{	
+	margin-left: 1.5em;
+	font-family: Roboto condensed;
+	font-size: 1.8em;
+}
+
+body > main > section > div > article > form > button{
+	border-style: none;
+	border-radius: 0.5em;
+	height: 2em;
+	width: 8em;
+	margin-left: 1.5em;
+	margin-bottom: 2em;
+	background-color: #E7772B;
+	color: white;
+	font-family: Roboto condensed;
+	font-size: 1.2em;
+	transition: 0.3s;
+}
+
+body > main > section > div > article > form > button:hover{
+	background-color: #C05E00;
+	cursor: pointer;
+}
+
+
+/******************************* Zoekresultaten sorteersysteem *******************************/
+span{
+	padding-left: 3em;
+	font-size: 0.8em;
+	display: inline-flex;
+	width: 90%;
+	height: 5em;
+	margin-bottom: 2em;
+}
+
+span p{
+	color: black;
+	font-size: 1.1em;
+	margin-left: 4em;
+	width: 18em;
+}
+
+span ul li{
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+}
+
+span ul li ul li{
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+	transition: 0.3s;
+}
+
+span ul li ul li:nth-child(1){
+	border-radius: 0em 0.5em 0em 0em;
+}
+
+span ul li ul li:nth-child(4){
+	border-radius: 0em 0em 0.5em 0.5em;
+}
+
+span ul li ul li:hover{
+	color: black;
+	cursor: pointer;
+	background-color: #D3D3D3;
+}
+
+span li ul{
+	display: none;
+	width: 12em;
+} 
+
+span li:hover ul{
+	border-radius: 0em 0.5em 0.5em 0.5em;
+	animation: fadeIn 0.8s;
+	position: absolute;
+	display: block;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+@keyframes fadeIn {
+	from{
+		opacity: 0;
+	}
+
+	to{
+		opacity: 1;
+	}
+}
+
+span ul li ul li a:hover{
+	color: black;
+}
+
+li a{
+	width: auto;
+	text-decoration: none;
+	color: grey;
+	font-size: 0.9em;
+	position: inherit;
+}
+
+ul{
+	padding-left: 0em;
+	width: 8em;
+	border-radius: 0.5em;
+	background-color: white;
+	margin-left: 20em;
+	margin-bottom: 2em;
+	list-style-type: none;
+	font-family: roboto condensed;
+	font-size: 1em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul li ul{
+	margin-left: 0em;
+	list-style-type: none;
+	font-family: roboto condensed;
+	font-size: 1em;
+}
+
+span button img{
+	display: inline;
+	padding-left: 1em;
+	width: 0.8em;
+	height: 0.8em;
+}
+
+span button{
+	margin-top: 1em;
+	margin-left: 0.8em;
+	display: inline;
+	border-style: none;
+	border-radius: 0.5em;
+	height: 2em;
+	width: auto;
+	background-color: #B74A00;
+	font-family: Roboto condensed;
+	opacity: 0.7;
+	transition: 0.3s;
+}
+
+span button:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+button > a{
+	padding-left: 0.1em;
+	text-decoration: none;
+	background-color: #B74A00;
+	color: white;
+	font-family: Roboto condensed;
+	font-size: 1.2em;
+}
+
+/******************************************** Grid ********************************************/
+div{
+	margin: 0 auto;
+	max-width: 60em;
+	justify-content: center;
+	grid-column-gap: 2em;
+	display: grid;
+  	grid-template-columns: 1fr 1fr 1fr;
+}
+
+article img:only-child{
+	width: 100%;
+	display: block;
+	width: 100%;
+	transition: 0.3s;
+}
+
+article img:only-child:hover{
+	opacity: 0.5;
+}
+
+body > main > div > article{
+	font-family: roboto condensed;
+	width: 22em;
+	border-radius: 0.6em;
+	background-color: white;
+	padding-bottom: 1em;
+	margin: auto;
+	margin-bottom: 2em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body > main > div > article:nth-child(6) > p{
+	padding-top: 1.5em;
+
+}
+
+body > main > div > article > p{
+	font-size: 0.9em;
+	font-family: Roboto, sans-serif;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 0.2em;
+	max-width: 35em;
+	color: black;
+}
+
+body > main > div > article > a{
+	color: #6495ED;
+	text-decoration: none;
+}
+
+body > main > div > article > footer{
+	height: 2.5em;
+	margin-top: 0.5em;
+	background-color: white;
+}
+
+body > main > div > article > footer > p{
+	width: 10em;
+	display: inline;
+}
+
+body > main > div > article > footer > a{
+	float: right;
+}
+
+body > main > div > article > footer > a > img:only-child{
+	display: block;
+	margin-right: 1em;
+	opacity: 0.5;
+	height: 2em;
+	width: 2em;
+}
+
+body > main > div > article > footer > a > img:only-child:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+/***************************************** Terugknop *****************************************/
+body > main > small{
+	margin-left: 2em;
+	margin-top: 1em;
+	width: 10em;
+	height: 2em;
+	display: none;
+}
+
+body > main > small > a > img{
+	padding-left: 0em;
+	padding-right: 0em;
+	height: 0.9em;
+	width: 0.9em;
+	}
+
+body > main > small > a{
+	font-family: roboto ;
+	font-size: 1em;
+	color: black;
+	text-decoration: underline;
+}
+
+/*************************************** Links & tekst ***************************************/
+
+p{
+	padding-left: 2em;
+	font-size: 0.9em;
+	font-family: roboto;
+	color: grey;
+}
+
+p, a{
+	padding-left: 1.7em;
+}
+
+body > main > div > article > a:hover{
+	text-decoration: underline;
+}
+
+main > a{
+	font-family: roboto condensed;
+	text-decoration: none;
+	color: grey;
+	width: 20em;
+	border-radius: 0.6em;
+	background-color: white;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;	
+	margin-left: 36.5em;
+	margin-bottom: 5em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.3s;
+}
+
+main > a:hover{
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+/****************************************** Footer ******************************************/
+footer{
+	margin-top: 3em;
+	background-color: white;
+}
+
+footer div{
+	display: inline-block;
+	margin-top: 2em;
+	padding-top: 1em;
+	padding-left: 67em;
+	height: 5em;
+	background-color: white;
+}
+
+footer div a{
+	display: inline;
+	height: 2em;
+	width: 2em;
+}
+
+body > footer > div > a > img{
+	height: 1.7em;
+	width: 1.7em;
+}
+
+/**************************************** Responsive ****************************************/
+@media screen and (max-width:70em){
+	body{
+		max-width: 100%;
+	}
+	body > main > small{
+	display: inline-block;
+	}
+	span{
+		padding-left: 4em;
+		display: inline-flex;
+		margin-bottom: 0em;
+		max-width: 100%;
+	}
+
+	span > p{
+		font-size: 0.9em;
+	}
+
+	span > button{
+		width: 11em;
+	}
+
+	span > button > a{
+		font-size: 0.8em;
+	}
+
+	span > button > img{
+		width: 0.5em;
+		height: 0.5em;
+	}
+
+	main > div{
+		max-width: 100%;
+		margin-top: 2em;
+		margin-right: 1em;
+		margin-left: 1em;
+		justify-content: center;
+	  	grid-template-columns: 1fr 1fr;
+	  	grid-column-gap: 0.5em;
+	  	grid-row-gap: 0.5em;
+	}
+	body > main > div > article{
+		width: 90%;
+	}
+
+	body > main > div > article > p{
+		font-size: 0.8em;
+	}
+
+	body > main > h1{
+		margin-top: 0em;
+		font-size: 2.5em;
+		margin-left: 1em;
+	}
+	span p{
+		margin-left: 0em;
+		width: auto;
+	}
+	ul{
+		margin-left: 1em;
+		padding-left: 0em;
+	}
+	ul li{
+		position: relative;
+	}
+	h2{
+		margin-left: 3em;
+	}
+	main > a{
+		margin-left: 17em;
+	}
+	footer{
+		width: 100%;
+		max-width: 70em;
+	}
+	footer div:only-child{
+		width: 20%;
+		padding-left: 0em;
+	}
+}
+
+@media screen and (max-width:40em){
+	body{
+		max-width: 100%;
+	}
+	body > main > small{
+		margin-left: 0.5em;
+		display: inline-block;
+	}
+	span{
+		padding-left: 2em;
+		display: inline-block;
+		max-width: 100%;
+	}
+	body > main > span > p{
+		padding-left: 1em;
+		margin-left: 0em;
+	}
+	header{
+		height: 20%;
+	}
+	body > header > a{
+		padding-left: 0em;
+	}
+	body > header > a > img:only-child{
+		height: 1.5em;
+	}
+	section{
+		width: 100%;
+	}
+	body > main > section > article{
+		width: 100%;
+	}
+	article > a > img{
+		max-width: 100%;
+	}
+	body > main > div > article{
+		width: 80%;
+	}
+	main > div{
+		margin-top: 2em;
+		margin-left: 0em;
+		margin-right: 0em;
+		display: block;
+	}
+	label{
+		margin-left: 0;
+		font-size: 80%;
+	}
+	body > main > div > article > p{
+		margin-left: 0;
+		font-size: 80%;
+	}
+
+	body > main > section > article > form{
+		margin-left: 3em;
+		max-width: 100%;
+	}
+	h1{
+		font-size: 1.5em;
+	}
+	body > main > h1{
+		margin-top: 0em;
+		font-size: 1.5em;
+		margin-left: 0.5em;
+	}
+	ul{
+		margin-left: 1em;
+	}
+
+	h2{
+		width: 50%;
+		max-width: 20em;
+		margin-left: 2em;
+		font-size: 1.5em;
+	}
+	#before{
+		margin-top: 1em;
+		margin-left: 4.7em;
+		width: 50%;
+	}
+
+	#after.after{
+		margin-top: 1em;
+		margin-left: 4.7em;
+		width: 50%;
+	}
+	main > a{
+		margin-left: 5.5em;
+	}
+
+	body > main > section > h1{
+	margin-left: 1em;
+	font-size: 1.6em;
+	}
+	
+	body > main > section > div > article{
+		width: 90%;
+		height: auto;
+	}
+	body > main > section > div > article > form > input{
+	}	
+	body > main > section > div > article > h2{	
+		padding-left: 0em;
+		font-size: 1.2em;
+		width: 80%;
+	}
+	body > main > section > div > article > form > button{
+	}
+	footer{
+		width: 100%;
+		max-width: 40em;
+	}
+	footer div:only-child{
+		width: 50%;
+		padding-left: 0em;
+	}
+}
